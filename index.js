@@ -9,6 +9,9 @@ function extMime(ext) {
     }
   }
 
+  // remove first period
+  ext = ext.replace(/^\./gi, '');
+
   return exts[ext] || [];
 }
 

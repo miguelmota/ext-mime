@@ -20,7 +20,7 @@ console.log(extMime('jpg')); // ['image/jpeg']
 console.log(extMime('js')); // ['application/javascript']
 console.log(extMime('xml')); // ['application/xml']
 console.log(extMime('xls')); // ['application/vnd.ms-excel']
-console.log(extMime('non-existent')); // []
+console.log(extMime('nonexistent')); // []
 ```
 
 ## Test
