@@ -2,7 +2,7 @@ const test = require('tape');
 const extMime = require('../index');
 
 test('test', (t) => {
-  t.plan(12);
+  t.plan(13);
 
   t.deepEqual(extMime(), []);
   t.deepEqual(extMime('asdfowref'), []);
@@ -16,4 +16,8 @@ test('test', (t) => {
   t.deepEqual(extMime('js'), ['application/javascript']);
   t.deepEqual(extMime('xml'), ['application/xml']);
   t.deepEqual(extMime('xls'), ['application/vnd.ms-excel']);
+  t.deepEqual(extMime('wmz'), [
+    'application/x-msmetafile',
+    'application/x-ms-wmz'
+  ]);
 });

@@ -20,6 +20,7 @@ console.log(extMime('jpg')); // ['image/jpeg']
 console.log(extMime('js')); // ['application/javascript']
 console.log(extMime('xml')); // ['application/xml']
 console.log(extMime('xls')); // ['application/vnd.ms-excel']
+console.log(extMime('wmz')); // ['application/x-msmetafile', 'application/x-ms-wmz']
 console.log(extMime('nonexistent')); // []
 ```
 

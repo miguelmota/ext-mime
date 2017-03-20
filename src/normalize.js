@@ -10,7 +10,7 @@ function normalize(data) {
       table[ext] = [];
     }
 
-    if (table[ext].indexOf(ext) === -1) {
+    if (table[ext].indexOf(mime) === -1) {
       table[ext].unshift(mime);
     }
 
